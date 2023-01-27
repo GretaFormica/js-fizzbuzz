@@ -9,20 +9,19 @@ for(let i = 1; i <= 100; i++) {
 
     list.append(item);
 
-    if(i % 3 == 0) {
+    if((i % 3 == 0) && (i % 5 == 0)) {
+        item.innerHTML = "fizzbuzz";
+        item.classList.add("fizz-buzz");
+
+    } else if(i % 3 == 0) {
         item.innerHTML = "fizz";
         item.classList.add("fizz");
-    }
-
-    if(i % 5 == 0) {
+        
+    } else if(i % 5 == 0) {
         item.innerHTML = "buzz";
         item.classList.add("buzz");
     }
 
-    if((i % 3 == 0) && (i % 5 == 0)) {
-        item.innerHTML = "fizzbuzz";
-        item.classList.add("fizz-buzz");
-    }
 
 
 
